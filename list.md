@@ -265,3 +265,35 @@ f(n)=f(n-1)+f(n-2)
 生成器的两种方式:
 * 生成器推导式 - 跟列表推导式类似,区别就是[]变成了()
 * 在方法中使用yield - 使用了yield语法糖的方法就不是普通方法了,就成为了生成器
+
+### question-64
+输入一个n,通过生成器的方式打印出0 ~ n之间的能被5整除,也能被7整除的数.
+
+### question-65
+请写一个断言来判断列表[2,4,6,8]中的元素都是偶数
+
+断言的格式为: **assert expression [, arguments]**<br>
+* 当 expression 为true时,则跳过;
+* 当 expression 为false时,则抛出一个异常.<br>
+
+伪代码如下:
+``` Python
+if not expression:
+  raise AssertionError(arguments)
+```
+
+### question-66
+从控制台输入一个简单的数学表达式,计算其结果并输出
+
+### question-67
+给定一个排好序的列表,使用二分查找法找到给出的数,打印其位置信息
+
+### question-68
+使用随机模块生成一个10~100之间的随机浮点数
+
+### question-69
+生成一个5到95之间的随机浮点数
+
+这里用到来两个生成随机浮点数的方法:
+* 通过random.random()生成[0,1]的浮点数,再扩大n倍
+* 通过random.uniform(low, high)生成一个[low, high]范围的数.相比起来,这种方式更方便,更准确一些
