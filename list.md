@@ -164,7 +164,7 @@ name、age、score构成一个元组, 输入一个该元组序列,对该元组�
 ### question-44
 使用map()函数生成一个列表,其元素是 1 ~ 20 的平方
 
-### question-045
+### question-45
 定义一个名为American的类,并在类中声明一个静态方法 printNationality
 ***
 **实例方法、类方法、静态方法**
@@ -183,14 +183,85 @@ name、age、score构成一个元组, 输入一个该元组序列,对该元组�
 > * 类方法是具有相同类的实例共同的行为,使用较少,但某些场景从逻辑上需要
 > * 静态方法其实跟类和实例没有直接的关系,只是基于逻辑上的联系,放在同一个类中,表示逻辑上的关联
 
-### question-046
+### question-46
 定义一个名为American的类以及其子类NewYorker
 
 * 定义一个子类继承自某个父类,只需要在类声明后的括号中传入父类名
 * 子类方法中通过super()调用父类的方法
 
-### question-047
+### question-47
 定义一个圆形Circle类,可以传入半径Radius,并在类中声明一个方法用于计算该圆形的面积
 
-### question-048
+## Day-7
 
+### question-48
+定义一个名为Rectangle的类,传入长度和宽度,并声明一个计算面积的方法
+
+### question-49
+定义一个类Shape及其子类Square.Square类的初始化方法接收一个表示长度的参数.两个类都有计算面积的方法,Shape类的面积默认为0.
+
+### question-50
+请抛出一个RuntimeError的异常.
+
+### question-51
+写一个方法用于计算5 / 0, 并用try/except捕获异常.
+
+### question-52
+自定义一个异常类,接收一个message参数
+
+### question-53
+假设我们有一些形如username@companyname.com的邮箱
+请写一段程序来打印给定邮箱的username. username和companyname都是数字组成的
+
+### question-54
+假设我们有一些形如username@companyname.com的邮箱
+请写一段程序来打印给定邮箱的companyname. username和companyname都是数字组成的
+
+### question-55
+写一段程序,当传入一段以空格分隔的字符串时,打印只有数字的字符串
+
+主要考察正则表达式的用法:
+* 正则表达式用r''表示,模式字符串写在引号中间,\b表示空格
+* re.findall(pattern, string)表示匹配到所有符合模式的部分
+
+### question-56
+打印unicode字符串的Hello
+
+主要考察unicode字符的输出: u'Hello world'
+
+### question-57
+读取一个ascii格式的字符串,将其转换成utf-8编码的unicode格式的字符串
+
+### question-58
+声明源文件的编码格式
+# -*- coding: utf-8 -*-
+
+### question-59
+控制台输入一个数字n,计算1/2 + 2/3 + 3/4 + ... + n/n+1的值
+
+### question-60
+f(n)=f(n-1)+100, 当n >0
+f(0)=0, n=0
+当给定一个n时,计算f(n)的值.
+
+### question-61
+Fibonacci问题
+f(0)=0
+f(1)=1
+f(n)=f(n-1)+f(n-2)
+给定n,求f(n)
+
+### question-62
+Fibonacci问题
+f(0)=0
+f(1)=1
+f(n)=f(n-1)+f(n-2)
+给定n,求f(0), f(1), ..., f(n)
+
+### question-63
+给定一个n,使用生成器的方式生成0 ~ n的偶数
+
+生成器是一种时间换空间的做法,不是一次性加载所有的数据,通过不断调用方法来加载部分需要的数据.
+生成器的两种方式:
+* 生成器推导式 - 跟列表推导式类似,区别就是[]变成了()
+* 在方法中使用yield - 使用了yield语法糖的方法就不是普通方法了,就成为了生成器
