@@ -294,6 +294,89 @@ if not expression:
 ### question-69
 生成一个5到95之间的随机浮点数
 
-这里用到来两个生成随机浮点数的方法:
+这里用到了生成随机浮点数的方法:
 * 通过random.random()生成[0,1]的浮点数,再扩大n倍
 * 通过random.uniform(low, high)生成一个[low, high]范围的数.相比起来,这种方式更方便,更准确一些
+* 通过random.choice(seq)生成一个随机数
+
+### question-70
+在0~10之间生成一个偶数的随机数
+
+### question-71
+在10~150之间随机生成一个能同时被5和7整除的随机数
+
+### question-72
+生成一个包含5个元素的列表,每个元素是100~200之间的随机数
+
+批量生成随机数的方式:
+* 调用多次random.uniform() / random.choice(seq) / ...
+* 调用采样方法random.sample(seq, num)
+
+### question-73
+生成一个包含5个元素的列表,每个元素是100~200之间的随机偶数
+
+### question-74
+生成一个包含5个元素的列表,每个元素是1~1000之间的能同时被5和7整除的随机数
+
+### question-75
+随机生成一个7到15之间的数字
+
+random中,random、uniform、randrange、choice、uniform、sample的区别:
+* random(): 生成一个0~1范围内的浮点数
+* uniform(a, b): 生成一个a~b范围内的浮点数,a和b都是浮点数
+* randrange(a, b): 生成一个a~b范围内的整数,a和B都是整数
+* choice(seq): 从seq中随机选择一个数返回
+* sample(seq, n): 从seq中随机选出n个数,组成一个列表
+
+### question-76
+运用zlib包对"hello world!hello world!hello world!hello world!"进行压缩和解压
+
+* 压缩: zlib.compress(bytes, encoding)
+* 解压缩: zlib.decompress(encodedstr)
+
+### question-77
+打印出执行100次1+1的总的时间
+
+时间相关的包为datetime
+* 获取当前时间: datetime.datetime.now()
+* 获取时间差: duration.microseconds
+
+### question-78
+给定一个列表[2, 7, 12, 34, 51],对该列表执行shuffle操作
+
+**shuffle: 洗牌, 意思就是重新随机排列**, shuffle操作是random模块中的方法,需要引入random
+
+### question-79
+根据主语、动词、对象列表,生成所有可能的语句.<br>
+* 主语: I, You
+* 动词: Play, Love
+* 对象: Hockey, Football
+
+### question-80
+将列表[5,6,77,45,22,12,24]中的偶数去掉,然后打印该列表
+
+* 列表推导式
+* filter()方法
+
+### question-81
+给出一个列表[12,24,35,70,88,120,155],去掉能同时整除5和7的元素,并打印列表
+
+### question-82
+给出一个列表[12,24,35,70,88,120,155],移除其中第0,2,4,6个元素,并打印列表
+
+可以使用内置的enumerate()函数获取列表的索引和列表元组(idx, item)
+
+### question-83
+给出一个列表[12,24,35,70,88,120,155], 移除第2-4个元素,并打印列表
+
+### question-84
+生成一个3 * 5 * 8的三维数组,元素都为0
+
+### question-85
+给出一个列表[12,24,35,70,88,120,155],移除第0,4,5个元素,并打印列表
+
+### question-86
+给出一个列表[12,24,35,24,88,120,155],移除元素24,打印剩下的列表
+
+### question-87
+给出两个列表:[1,3,6,78,35,55]和[12,24,35,24,88,120,155],求交集,交集也为列表
