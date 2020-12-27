@@ -266,6 +266,7 @@ f(n)=f(n-1)+f(n-2)
 * 生成器推导式 - 跟列表推导式类似,区别就是[]变成了()
 * 在方法中使用yield - 使用了yield语法糖的方法就不是普通方法了,就成为了生成器
 
+## Day-8
 ### question-64
 输入一个n,通过生成器的方式打印出0 ~ n之间的能被5整除,也能被7整除的数.
 
@@ -299,6 +300,7 @@ if not expression:
 * 通过random.uniform(low, high)生成一个[low, high]范围的数.相比起来,这种方式更方便,更准确一些
 * 通过random.choice(seq)生成一个随机数
 
+## Day-9
 ### question-70
 在0~10之间生成一个偶数的随机数
 
@@ -380,3 +382,58 @@ random中,random、uniform、randrange、choice、uniform、sample的区别:
 
 ### question-87
 给出两个列表:[1,3,6,78,35,55]和[12,24,35,24,88,120,155],求交集,交集也为列表
+
+## Day-10
+
+### question-88
+对列表[12,24,35,24,88,120,155,88,120,155]进行去重,剩下的按照原来的顺序输出.
+
+### question-89
+定义一个Person类及其两个子类Male和Female,每个类都定义一个getGender方法,返回其gender
+
+> * 子类可以直接调用父类的方法
+> * 私有的变量(__开头的变量)只能被同一对象内的其他变量和方法调用,不能被子类访问
+
+### question-90
+输入一个字符串,计算其中每个字符的数量.
+
+### question-91
+输入一个语句,反序输出.
+
+反序输出的三种思路:
+* 从输入字符串的末尾开始循环,将每个字符倒序重排
+* 使用[::-1],第三个参数**-1**表示倒序截取
+* 使用内置的**reversed**函数.
+  ```python
+  ''.join(reversed(source))
+  ```
+
+### question-92
+输入一个语句,打印出其中索引为偶数的部分.
+
+### question-93
+打印出[1, 2, 3]所有置换的组合.
+使用`itertools.permutations(list)`, `itertools.permutations`返回的是itertools.permutations对象,可以将其转换为列表或其他数据类型.
+
+### question-94
+鸡兔同笼问题: 笼子里一共有35个头和94个腿,问有多少只鸡和多少只兔子.
+
+### question-95
+给出里参赛运动员的成绩列表,找出其中亚军(runner-up)的成绩.不管有多少个冠军,分数第二的都是亚军.
+
+### question-96
+给定一个字符串s和一个换行的宽度width,对字符串进行换行.
+使用textwrap.wrap(text, width) -> List进行处理.
+
+### question-97
+给定一个整数n,打印Rangoli序列.
+比如:n=3时, 输出:
+----c----
+--c-b-c--
+c-b-a-b-c
+--c-b-c--
+----c----
+"""
+
+### question-98
+给定一个日期,计算对应的日期是星期几.
