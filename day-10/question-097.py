@@ -29,7 +29,7 @@ def print_rangoli(size):
     ans = '\n'.join(ans)
     print(ans)
 
-while True:
-    n = int(input())
-    print_rangoli(n)
-    print('===============')
+    while True:
+        n = int(input())
+        print_rangoli(n)
+        print('===============')

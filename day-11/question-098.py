@@ -13,3 +13,4 @@ while True:
     print(week_day)
     
     print(calendar.day_name[week_day].upper())
+    
